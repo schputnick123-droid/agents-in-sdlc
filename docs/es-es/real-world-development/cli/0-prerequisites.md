@@ -2,10 +2,10 @@
 title: "Ejercicio 0: Requisitos previos"
 authors:
   - geektrainer
-lastUpdated: 2026-06-30
+lastUpdated: 2026-09-18
 ---
 
-Antes de empezar los ejercicios de Copilot CLI, tienes que dejarlo todo preparado. Crearás tu propia copia del repositorio Tailspin Toys y pondrás en marcha un [codespace][codespaces], cuyo terminal integrado usarás para instalar y ejecutar Copilot CLI en el siguiente ejercicio.
+Antes de empezar las lecciones de Copilot CLI, debes prepararlo todo. Crearás una copia del repositorio Tailspin Toys y pondrás en marcha un [codespace][codespaces], cuyo terminal integrado utilizarás para instalar y ejecutar Copilot CLI en la lección siguiente.
 
 ## Configurar el repositorio del laboratorio
 
@@ -20,7 +20,7 @@ Para crear una copia del repositorio para el código que vas a crear, generarás
 
     ![Captura de la configuración de la plantilla del repositorio](../../../_images/ex0-repository-settings.png)
 
-4. Anota la ruta del repositorio que has creado (**nombre-de-organización-o-usuario/nombre-del-repositorio**), ya que la consultarás más adelante en el laboratorio.
+4. Anota la ruta del repositorio que has creado (`organization-or-user-name/repository-name`), ya que la consultarás más adelante en el taller.
 
 > [!NOTE]
 > **Tu backlog está listo**
@@ -31,35 +31,37 @@ Para crear una copia del repositorio para el código que vas a crear, generarás
 
 Ahora usarás un codespace para completar los ejercicios del laboratorio.
 
-[GitHub Codespaces][codespaces] es un entorno de desarrollo en la nube que te permite escribir, ejecutar y depurar código directamente en el navegador. Proporciona un IDE con todas las funciones y compatibilidad con varios lenguajes de programación, extensiones y herramientas.
+[GitHub Codespaces][codespaces] es un entorno de desarrollo en la nube que permite escribir, ejecutar y depurar código directamente en el navegador. Ofrece un editor completo con compatibilidad con varios lenguajes de programación, extensiones y herramientas.
 
 1. Ve a tu repositorio recién creado.
 2. Selecciona el botón verde **Code**.
 
     ![Botón Code](../../../_images/ex0-code-button.png)
 
-3. Selecciona la pestaña **Codespaces** y, a continuación, selecciona el botón **+** para crear un Codespace nuevo.
+3. Selecciona la pestaña **Codespaces** y, después, selecciona **Create codespace on main**.
 
     ![Crear un codespace nuevo](../../../_images/ex0-create-codespace.png)
 
-La creación del codespace tardará varios minutos, aunque sigue siendo mucho más rápida que instalar manualmente todos los servicios. Dicho esto, puedes aprovechar este tiempo para explorar otras funciones de GitHub Copilot, a las que prestaremos atención a continuación.
+4. Espera a que termine la configuración. La plantilla instalará las dependencias del proyecto, Chromium de Playwright y la base de datos local.
+5. Si aparece el mensaje **Do you trust the authors of the files in this folder?**, selecciona **Trust Folder & Continue**.
+6. Abre un terminal en la raíz del repositorio e inicia la aplicación:
+
+   ```bash
+   npm run dev
+   ```
+
+7. Cuando Codespaces indique que el puerto `4321` está disponible, selecciona **Open in Browser** y confirma que se carga Tailspin Toys.
+8. Vuelve al terminal y detén el servidor de desarrollo con <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 > [!CAUTION]
-> Volverás al codespace en un ejercicio posterior. De momento, déjalo abierto en una pestaña del navegador.
+> Ya tienes todo preparado. En esta lección has creado una copia del proyecto a partir de la plantilla, has creado un codespace y has confirmado que el proyecto está listo.
 
 > [!NOTE]
-> Este taller está diseñado para ejecutarse dentro de un codespace o de un [contenedor de desarrollo][dev-containers] local. Ambos garantizan que el entorno tenga instalados todos los requisitos previos necesarios para disfrutar de una experiencia fluida. Si prefieres ejecutarlo en local, abre el repositorio clonado en VS Code y selecciona **Reopen in Container** cuando se te solicite; VS Code compilará el mismo contenedor de desarrollo que usa el codespace.
-
-[codespaces]: https://github.com/features/codespaces
-[dev-containers]: https://code.visualstudio.com/docs/devcontainers/containers
-
-## Resumen
-
-¡Enhorabuena! Has creado una copia del repositorio del laboratorio. También has iniciado el proceso de creación de tu codespace, que usarás cuando empieces a trabajar con Copilot CLI.
+> Este taller está diseñado para ejecutarse dentro de un codespace.
 
 ## Siguiente paso
 
-Vamos a instalar Copilot CLI y a autenticarlo con tu cuenta de GitHub. Continúa con el [Ejercicio 1 - Instalar GitHub Copilot CLI][next-lesson].
+A continuación, [instalarás GitHub Copilot CLI][next-lesson] en tu codespace y te autenticarás con tu cuenta de GitHub.
 
 ## Recursos
 
